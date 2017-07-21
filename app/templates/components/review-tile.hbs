@@ -1,6 +1,7 @@
 <div class="container">
 {{new-review restaurant=model addReview="addReview"}}
 {{#each model.reviews as |review| }}
+{{ star-review review.rating}}
 {{review.author}}
 {{review.title}}
 {{/each}}
