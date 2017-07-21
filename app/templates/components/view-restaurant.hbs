@@ -1,3 +1,9 @@
 <div class="container">
-  
+  {{#each model as |restaurant|}}
+  <div class="col-md-3">
+    <p>{{restaurant.name}}</p>
+    <img src={{restaurant.image}}>
+  </div>
+
+  {{/each}}
 </div>
