@@ -13,6 +13,16 @@ export default Ember.Route.extend({
       })
       restaurant.save();
       this.transitionTo('restaurant', restaurant);
-    }
+    },
+    createReview(params){
+      var newReview = this.store.createRecord('review', params);
+      var model = params.restaurant;
+      model.get('reviews').addObject(newReview);
+      newReview.save().then(function(){
+        return model.save();
+
+      });
+      this.transitionTo('restaurant', model);
+    },
   }
 });

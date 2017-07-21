@@ -1,1 +1,7 @@
-{{yield}}
+<div class="container">
+{{new-review restaurant=model addReview="addReview"}}
+{{#each model.reviews as |review| }}
+{{review.author}}
+{{review.title}}
+{{/each}}
+</div>

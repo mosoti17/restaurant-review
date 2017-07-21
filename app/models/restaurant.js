@@ -7,5 +7,6 @@ export default DS.Model.extend({
   latitude: DS.attr(),
   longitude: DS.attr(),
   type: DS.attr(),
-  class_rating: DS.attr()
+  class_rating: DS.attr(),
+  reviews:DS.hasMany('review', {async:true})
 });

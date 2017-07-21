@@ -1,13 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  editRestaurant: false,
+  showEditRestaurant: false,
   actions: {
     showEditForm(){
-      this.set('editRestaurant', true)
+      this.set('showEditRestaurant', true)
     },
     cancel(){
-      this.setProperties({'editRestaurant': false,})
+      this.setProperties({'showEditRestaurant': false,})
     },
     editRestaurant(restaurant){
       var params ={
@@ -20,7 +20,7 @@ export default Ember.Component.extend({
         image: this.get('image'),
       }
       this.sendAction('editRestaurant', restaurant, params);
-      this.setProperties({'editRestaurant': false, })
+      this.setProperties({'showEditRestaurant': false, })
 
       }
     }

@@ -1,10 +1,18 @@
 <div class="container">
   {{#each model as |restaurant|}}
-  {{#link-to 'restaurant' restaurant.id}}
   <div class="col-md-3">
-    <p>{{restaurant.name}}</p>
+
+
+    <p>{{restaurant.name}}
+      {{favorite-restaurant}}
+    <i class="fa fa-star-o fa-2x" {{action 'addFavorite' restaurant}}></i></p>
+    {{#link-to 'restaurant' restaurant.id}}
     <img src={{restaurant.image}}>
-  </div>
+
+
 {{/link-to}}
+
+</div>
+
   {{/each}}
 </div>
