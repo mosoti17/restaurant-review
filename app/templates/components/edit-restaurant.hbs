@@ -1,0 +1,48 @@
+<div class="container">
+  {{#if editRestaurant}}
+  <div>
+    <form >
+      <div class="col-md-6">
+      <div class="form-group">
+        <label for="name">name</label>
+        {{input value=name id="name" class="form-control" placeholder=restaurant.name}}
+      </div>
+      <div class="form-group">
+        <label for="type">type</label>
+        {{input value=type id="type" class="form-control" placeholder=restaurant.type}}
+      </div>
+      <div class="form-group">
+        <label for="class_rating">class_rating</label>
+        {{input value=class_rating type="number" id="class_rating" class="form-control" placeholder=restaurant.class_rating }}
+      </div>
+      <div class="form-group">
+        <label for="image">image</label>
+        {{input value=image id="image" class="form-control" placeholder=restaurant.image}}
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="description">description</label>
+        {{textarea rows="5" value=description id="description" class="form-control" placeholder=restaurant.description}}
+      </div>
+
+      <div class="form-group">
+        <label for="longitude">longitude</label>
+        {{input value=longitude type="number" id="longitude" class="form-control" placeholder=restaurant.longitude}}
+      </div>
+      <div class="form-group">
+        <label for="latitude">latitude</label>
+        {{input value=latitude type="number" id="latitude" class="form-control" placeholder=restaurant.latitude}}
+      </div>
+      </div>
+
+      <button {{ action 'editRestaurant' restaurant}} >Edit Restaurant</button>
+      <button {{ action 'cancel' class="pull-right"}} >Cancel</button>
+    </form>
+
+  </div>
+  {{else}}
+  <button {{ action 'showEditForm'}} >Edit Restaurant</button>
+  {{/if}}
+
+</div>

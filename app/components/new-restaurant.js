@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       this.set('addNewRestaurant', true)
     },
     cancel(){
-      this.set('addNewRestaurant', false)
+    this.setProperties({'addNewRestaurant': false, 'name':'','type':'', 'class_rating':'', 'description':'', 'longitude':'', 'latitude':'','image':''})
     },
     addRestaurant(){
       var params ={
@@ -15,12 +15,12 @@ export default Ember.Component.extend({
         type: this.get('type'),
         class_rating: parseInt(this.get('class_rating')),
         description: this.get('description'),
-        longitude: parseInt(this.get('longitude')),
-        latitude: parseInt(this.get('latitude')),
+        longitude: parseFloat(this.get('longitude')),
+        latitude: parseFloat(this.get('latitude')),
         image: this.get('image'),
       }
       this.sendAction('addRestaurant', params);
-      this.setProperties({'addNewRestaurant': false, 'name':'',})
+      this.setProperties({'addNewRestaurant': false, 'name':'','type':'', 'class_rating':'', 'description':'', 'longitude':'', 'latitude':'','image':''})
 
     }
   }
