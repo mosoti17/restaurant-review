@@ -1,0 +1,21 @@
+{
+  "name": "crowd-sourced-review-site",
+  "description": "Small description for crowd-sourced-review-site goes here",
+  "main": "",
+  "authors": [
+    "mosoti17 <mosoti17@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}
