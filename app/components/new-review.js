@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         author:this.get('author'),
         title: this.get('title'),
         message: this.get('message'),
-        rating: this.get('rating'),
+        rating: parseInt(this.get('rating')),
         date_created:today,
         restaurant: this.get('restaurant')
       }

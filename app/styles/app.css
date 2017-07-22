@@ -1,6 +1,42 @@
+body{
+  background-image: url(https://image.shutterstock.com/z/stock-vector-seamless-restaurant-menu-pattern-background-vector-illustration-169713272.jpg);
+background-attachment: fixed;
+}
 textarea{
   resize: none;
 }
 img{
   width: 100%;
+}
+h1{
+  font-family: 'Sigmar One', cursive;
+  text-align: center;
+  font-size: 60px;
+  padding: 2%;
+}
+.restaurant{
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+.view{
+  border-right: 1px solid #a2afc4;
+  border-left: 1px solid #a2afc4;
+  border-bottom: 1px solid #a2afc4;
+  background-color: white;
+  padding-left: 20px;
+}
+.button{
+  display: block;
+  width: 100%;
+}
+.restaurant img{
+  height: 200px;
+}
+.restaurant button{
+  width: 100%;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: -2;
+  background-color: white;
 }
