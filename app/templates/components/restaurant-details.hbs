@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>{{model.name}}</h2>
+  <div class="row">
+
+    <div class="col-md-3 col-md-offset-1 image">
+<img src={{model.image}}>
+    </div>
+    <div class="col-md-3 details">
+      {{model.type}}
+    </div>
+    <div class="col-md-3">
+      {{google-map restaurant=model}}
+    </div>
+
+
+  </div>
+  <div class="row">
+    <div class="col-md-9 col-md-offset-1">
+{{model.description}}
+    </div>
+
+  </div>
+
+</div>

@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       this.setProperties({'addNewReview':false, 'title':'', 'message':'', 'rating':''});
     },
     addReview(){
-      var today = moment().format('YYYY-MM-DD HH:mm:ss' );
+      var today = moment().format('DD-MM-YYYY' );
       var params ={
         author:this.get('author'),
         title: this.get('title'),

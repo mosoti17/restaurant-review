@@ -1,5 +1,5 @@
 <div class="container">
-  {{#each model as |restaurant|}}
+  {{#each model.restaurants as |restaurant|}}
   <div class="col-md-3 restaurant">
     {{#link-to 'restaurant' restaurant.id}}
     <div class="row">

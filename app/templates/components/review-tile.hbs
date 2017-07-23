@@ -2,7 +2,8 @@
 {{new-review restaurant=model addReview="addReview"}}
 {{#each model.reviews as |review| }}
 {{ star-review review.rating}}
-{{review.author}}
-{{review.title}}
+<h5>{{review.author}} says:</h5>
+<p>{{review.message}}</p>
+{{review.date_created}}
 {{/each}}
 </div>

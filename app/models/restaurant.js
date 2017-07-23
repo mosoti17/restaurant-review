@@ -1,4 +1,4 @@
-import Ember from 'ember';
+
 import DS from 'ember-data';
 
 export default DS.Model.extend({
@@ -9,6 +9,6 @@ export default DS.Model.extend({
   longitude: DS.attr(),
   type: DS.attr(),
   class_rating: DS.attr(),
-  reviews:DS.hasMany('review', {async:true}),
-  
+  reviews:DS.hasMany('review', {async:true})
+
 });
