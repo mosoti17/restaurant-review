@@ -42,7 +42,7 @@ h1{
 }
 .details{
   background-color: white;
- padding: 5px;
+ margin: 0;
 }
 h2{
   text-align: center;
@@ -51,10 +51,19 @@ h2{
   margin-bottom: 0;
 }
 .map-display {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 100%;
   }
   .image img{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 100%;
+  }
+  .review{
+    background-color: white;
+    margin-bottom: 2%;
+
+  }
+  .rate{
+    color:#aeb7c4;
+    text-align: right;
   }
